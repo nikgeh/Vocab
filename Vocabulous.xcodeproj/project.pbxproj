@@ -21,11 +21,11 @@
 		249E4E4813E26F37006ECC94 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		249E4E4A13E26F37006ECC94 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		249E4E4C13E26F37006ECC94 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		249E4E5013E26F37006ECC94 /* Vocabulous-Info.plist */ = {isa = PBXFileReference; path = "Vocabulous-Info.plist"; sourceTree = "<group>"; };
+		249E4E5013E26F37006ECC94 /* Vocabulous-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Vocabulous-Info.plist"; sourceTree = "<group>"; };
 		249E4E5213E26F37006ECC94 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		249E4E5413E26F37006ECC94 /* Vocabulous-Prefix.pch */ = {isa = PBXFileReference; path = "Vocabulous-Prefix.pch"; sourceTree = "<group>"; };
+		249E4E5413E26F37006ECC94 /* Vocabulous-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Vocabulous-Prefix.pch"; sourceTree = "<group>"; };
 		249E4E5513E26F37006ECC94 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		249E4E5713E26F37006ECC94 /* VocabulousAppDelegate.h */ = {isa = PBXFileReference; path = VocabulousAppDelegate.h; sourceTree = "<group>"; };
+		249E4E5713E26F37006ECC94 /* VocabulousAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VocabulousAppDelegate.h; sourceTree = "<group>"; };
 		249E4E5813E26F37006ECC94 /* VocabulousAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VocabulousAppDelegate.m; sourceTree = "<group>"; };
 		249E4E5B13E26F37006ECC94 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
