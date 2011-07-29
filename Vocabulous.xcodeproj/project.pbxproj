@@ -14,6 +14,7 @@
 		249E4E5613E26F37006ECC94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 249E4E5513E26F37006ECC94 /* main.m */; };
 		249E4E5913E26F37006ECC94 /* VocabulousAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 249E4E5813E26F37006ECC94 /* VocabulousAppDelegate.m */; };
 		249E4E5C13E26F37006ECC94 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 249E4E5A13E26F37006ECC94 /* MainWindow.xib */; };
+		249E4E6413E26F6D006ECC94 /* WordListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 249E4E6313E26F6D006ECC94 /* WordListTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		249E4E5713E26F37006ECC94 /* VocabulousAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VocabulousAppDelegate.h; sourceTree = "<group>"; };
 		249E4E5813E26F37006ECC94 /* VocabulousAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VocabulousAppDelegate.m; sourceTree = "<group>"; };
 		249E4E5B13E26F37006ECC94 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		249E4E6213E26F6D006ECC94 /* WordListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WordListTableViewController.h; path = ../WordListTableViewController.h; sourceTree = "<group>"; };
+		249E4E6313E26F6D006ECC94 /* WordListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WordListTableViewController.m; path = ../WordListTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,8 @@
 		249E4E4E13E26F37006ECC94 /* Vocabulous */ = {
 			isa = PBXGroup;
 			children = (
+				249E4E6213E26F6D006ECC94 /* WordListTableViewController.h */,
+				249E4E6313E26F6D006ECC94 /* WordListTableViewController.m */,
 				249E4E5713E26F37006ECC94 /* VocabulousAppDelegate.h */,
 				249E4E5813E26F37006ECC94 /* VocabulousAppDelegate.m */,
 				249E4E5A13E26F37006ECC94 /* MainWindow.xib */,
@@ -154,6 +159,7 @@
 			files = (
 				249E4E5613E26F37006ECC94 /* main.m in Sources */,
 				249E4E5913E26F37006ECC94 /* VocabulousAppDelegate.m in Sources */,
+				249E4E6413E26F6D006ECC94 /* WordListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
