@@ -8,8 +8,34 @@
 
 #import "WordListTableViewController.h"
 
+@interface WordListTableViewController()
+
+@property (nonatomic, retain) NSMutableDictionary *words;
+@property (nonatomic, retain) NSArray *sections;
+
+@end
+
 
 @implementation WordListTableViewController
+
+@synthesize words, sections;
+
+- (NSMutableDictionary *)words 
+{
+    if (!words) {
+        NSURL *wordsURL = [NSURL URLWithString:@"http://www.stanford.edu/class/cs193p/vocabwords.txt"];
+        words = [[NSMutableDictionary dictionaryWithContentsOfURL:wordsURL] retain];
+    }
+    return words;
+}
+
+- (NSArray *)sections
+{
+    if (!sections) {
+        return [[[self.words allKeys] sortedArrayUsingSelector:@selector(compare:)] retain];
+    }
+    return sections;
+}
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -22,6 +48,8 @@
 
 - (void)dealloc
 {
+    [words release];
+    [sections release];
     [super dealloc];
 }
 
@@ -83,21 +111,29 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return self.sections.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    NSArray *wordsInSection = [self.words objectForKey:[self.sections objectAtIndex:section]];
+    return wordsInSection.count;
+}
+
+- (NSString *)wordAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Return the number of rows in the section.
+    NSArray *wordsInSection = [self.words objectForKey:[self.sections 
+                                                        objectAtIndex:indexPath.section]];
+    return [wordsInSection objectAtIndex:indexPath.row];    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    // ngeh: Want a unique key for our table
+    static NSString *CellIdentifier = @"WordListTableViewCell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
@@ -105,6 +141,8 @@
     }
     
     // Configure the cell...
+    cell.textLabel.text = [self wordAtIndexPath:indexPath];
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
 }
